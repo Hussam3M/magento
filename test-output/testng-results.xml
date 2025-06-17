@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-17T18:32:36 GMT+03:00" name="Default suite" finished-at="2025-06-17T18:34:06 GMT+03:00" duration-ms="89461">
+    <groups>
+    </groups>
+    <test started-at="2025-06-17T18:32:36 GMT+03:00" name="Default test" finished-at="2025-06-17T18:34:06 GMT+03:00" duration-ms="89461">
+      <class name="FinalProject.FinalProject.AppTest">
+        <test-method signature="GetUrl()[pri:1, instance:FinalProject.FinalProject.AppTest@7d64e326]" started-at="2025-06-17T18:32:36 GMT+03:00" name="GetUrl" finished-at="2025-06-17T18:32:56 GMT+03:00" duration-ms="19578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUrl -->
+        <test-method signature="userRegistrationProsses()[pri:2, instance:FinalProject.FinalProject.AppTest@7d64e326]" started-at="2025-06-17T18:32:56 GMT+03:00" name="userRegistrationProsses" finished-at="2025-06-17T18:33:02 GMT+03:00" duration-ms="5917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationProsses -->
+        <test-method signature="sign_in()[pri:3, instance:FinalProject.FinalProject.AppTest@7d64e326]" started-at="2025-06-17T18:33:02 GMT+03:00" name="sign_in" finished-at="2025-06-17T18:33:06 GMT+03:00" duration-ms="4268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sign_in -->
+        <test-method signature="productDetails()[pri:4, instance:FinalProject.FinalProject.AppTest@7d64e326]" started-at="2025-06-17T18:33:06 GMT+03:00" name="productDetails" finished-at="2025-06-17T18:33:09 GMT+03:00" duration-ms="3201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productDetails -->
+        <test-method signature="addTwoRandomPantsToCart()[pri:5, instance:FinalProject.FinalProject.AppTest@7d64e326]" started-at="2025-06-17T18:33:09 GMT+03:00" name="addTwoRandomPantsToCart" finished-at="2025-06-17T18:33:25 GMT+03:00" duration-ms="15313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTwoRandomPantsToCart -->
+        <test-method signature="ViewingandModifyingtheCart()[pri:6, instance:FinalProject.FinalProject.AppTest@7d64e326]" started-at="2025-06-17T18:33:25 GMT+03:00" name="ViewingandModifyingtheCart" finished-at="2025-06-17T18:33:53 GMT+03:00" duration-ms="28664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewingandModifyingtheCart -->
+        <test-method signature="ProceedingtoCheckout()[pri:7, instance:FinalProject.FinalProject.AppTest@7d64e326]" started-at="2025-06-17T18:33:53 GMT+03:00" name="ProceedingtoCheckout" finished-at="2025-06-17T18:33:57 GMT+03:00" duration-ms="3303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProceedingtoCheckout -->
+        <test-method signature="PrivacyPolicyAccessibility()[pri:8, instance:FinalProject.FinalProject.AppTest@7d64e326]" started-at="2025-06-17T18:33:57 GMT+03:00" name="PrivacyPolicyAccessibility" finished-at="2025-06-17T18:34:01 GMT+03:00" duration-ms="4096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrivacyPolicyAccessibility -->
+        <test-method signature="ContactUsPage()[pri:9, instance:FinalProject.FinalProject.AppTest@7d64e326]" started-at="2025-06-17T18:34:01 GMT+03:00" name="ContactUsPage" finished-at="2025-06-17T18:34:04 GMT+03:00" duration-ms="3183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContactUsPage -->
+        <test-method signature="LogOut()[pri:10, instance:FinalProject.FinalProject.AppTest@7d64e326]" started-at="2025-06-17T18:34:04 GMT+03:00" name="LogOut" finished-at="2025-06-17T18:34:06 GMT+03:00" duration-ms="1867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+      </class> <!-- FinalProject.FinalProject.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
