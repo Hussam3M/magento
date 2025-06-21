@@ -5,10 +5,9 @@
     <classes>
       <class name="FinalProject.FinalProject.AppTest">
         <methods>
-          <include name="ProceedingtoCheckout"/>
-          <include name="PrivacyPolicyAccessibility"/>
-          <include name="GetUrl"/>
-          <include name="ConactUsPage"/>
+          <include name="mySetup"/>
+          <include name="ContactUsPage"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- FinalProject.FinalProject.AppTest -->
     </classes>
