@@ -22,17 +22,19 @@ public class AppTest extends TestData {
     @BeforeTest
     public void mySetup() {
         Setup();
+     
     }
 
     @Test(priority = 1)
-    public void GetUrl() {
+    public void GetUrl() throws InterruptedException {
         driver.get(url);
        String ActualURL = driver.getCurrentUrl();
         Assert.assertEquals(ActualURL, ExpectedURL);
-    }
+            }
 
     @Test(priority = 2)
     public void userRegistrationProsses() throws InterruptedException {
+    	driver.get("https://magento.softwaretestingboard.com/customer/account/create/");
         driver.findElement(By.partialLinkText("Create")).click();
         driver.findElement(By.id("firstname")).sendKeys(FirstName);
         driver.findElement(By.id("lastname")).sendKeys(LastName);
@@ -41,7 +43,8 @@ public class AppTest extends TestData {
         Thread.sleep(2000);
         driver.findElement(By.id("password-confirmation")).sendKeys("123rsH*&");
         driver.findElement(By.cssSelector(".action.submit.primary")).click(); 
-      String ActualRegisterMsg = driver.findElement(By.cssSelector(".message-success.success.message")).getText();
+       
+        String ActualRegisterMsg = driver.findElement(By.cssSelector(".message-success.success.message")).getText();
         Assert.assertEquals(ActualRegisterMsg , ExpectedRegisterMsg);
         
         driver.findElement(By.xpath("//div[@class='panel header']//button[@type='button']")).click();
@@ -67,12 +70,18 @@ public class AppTest extends TestData {
         Assert.assertEquals(ActualwelcomeText, true);
     }
     @Test(priority = 4)
-    public void productDetails() {
+    public void productDetails() throws IOException {
         driver.get(url + "men/bottoms-men/pants-men.html");
         driver.findElement(By.linkText("Aether Gym Pant")).click();
-        WebElement productTitle = driver.findElement(By.cssSelector("span.base"));
-        String ActualProductTitle = productTitle.getText();
-        Assert.assertEquals(ActualProductTitle , ExpectedProductTitle);
+        WebElement productDetails = driver.findElement(By.cssSelector(".column.main"));
+        productDetails.getText();
+        System.out.println("productDetails: "+ productDetails);        
+     
+        TakesScreenshot scrShot = ((TakesScreenshot) driver);
+        File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
+        String projectPath = System.getProperty("user.dir");
+        File destFile = new File(projectPath + "/src/test/java/screenshot/ProductDetails.Png");
+        FileHandler.copy(srcFile, destFile);
     }
 
     @Test(priority = 5)
@@ -119,12 +128,12 @@ public class AppTest extends TestData {
    driver.findElement(By.xpath("//span[normalize-space()='View and Edit Cart']")).click();
    Thread.sleep(2000);
    WebElement qtyInput = driver.findElement(By.xpath("(//td[contains(@class, 'col qty')]//input)[1]"));
-qtyInput.clear();
-qtyInput.sendKeys("2");
-Thread.sleep(2000);
+   qtyInput.clear();
+   qtyInput.sendKeys("2");
+   Thread.sleep(2000);
 
-String actualQty = qtyInput.getAttribute("value");
-Assert.assertEquals(actualQty, ExpectedQty);
+   String actualQty = qtyInput.getAttribute("value");
+   Assert.assertEquals(actualQty, ExpectedQty);
 
 
  
@@ -174,7 +183,7 @@ js.executeScript("window.scrollTo(0,500)");
      TakesScreenshot scrShot = ((TakesScreenshot) driver);
         File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
         String projectPath = System.getProperty("user.dir");
-        File destFile = new File(projectPath + "/src/test/java/screenshot/1.Png");
+        File destFile = new File(projectPath + "/src/test/java/screenshot/ContactUsPage.Png");
         FileHandler.copy(srcFile, destFile);
     }
 

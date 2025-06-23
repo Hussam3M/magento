@@ -12,12 +12,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestData {
     WebDriver driver = new ChromeDriver();
+    String url = "https://magento.softwaretestingboard.com/";
     Random rand = new Random();
     JavascriptExecutor js = (JavascriptExecutor) driver;
-    String FirstName= "husam18";
-    String LastName = "Zyoud";
+    String FirstName= "husam";
+    String LastName = "Zyoud3";
    String Email = FirstName + LastName + "@gmail.com";
-    String url = "https://magento.softwaretestingboard.com/";
+   
     String ExpectedURL = url ;
     String ExpectedRegisterMsg = "Thank you for registering with Main Website Store.";
     String ExpectedProductTitle = "Aether Gym Pant";
